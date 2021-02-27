@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Title</title>
+  </head>
+  <body onload="loadProjects('created');">
+
+    <!-- 
+        RULES:
+        1 - do not change ids
+        2 - onload you must specify <<onload="loadProjects('created');">>
+        3 - import scripts: load-it-js/ folder js files, jquery
+    -->
+    
+    <!-- ########################################################################## -->
+    <!--                          COPY THIS TO YOUR WEBSITE                         -->
+    <!-- ########################################################################## -->
+
+    <div id="projects">
+        <!-- buttons for different ordering methods-->
+        <button onclick="loadProjects('created')" type="button">CREATION DATE</button> 
+        <button onclick="loadProjects('full_name')" type="button">NAME</button>
+        <button onclick="loadProjects('updated')" type="button">UPDATE DATE</button>
+                
+                <!-- projects tables -->
+        <table id="projectsTable">
+            <!-- head -->
+            <thead>
+                <tr>
+                    <th style="width: 30%">Name</th>
+                    <th style="width: 15%">Created</th>
+                    <th style="width: 15%">Last update</th>
+                    <th style="width: 20%">Language (most used)</th>
+                    <th style="width: 20%">Download</th>
+                </tr>
+            </thead>
+
+            <!-- content -->
+            <tbody id="projectTableContent">
+
+            </tbody>
+        </table>
+        
+        <ul id="pagination"></ul>
+    </div>
+    
+    <!-- jquery library CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!-- our libraries -->
+    <script type="text/javascript" src="loadit-js/app.js"></script>
+    <script type="text/javascript" src="loadit-js/projects-content.js"></script>
+    <script type="text/javascript" src="loadit-js/projects-pagination.js"></script>
+    <script type="text/javascript" src="loadit-js/projects-table.js"></script>
+    <script type="text/javascript" src="loadit-js/utils.js"></script>
+    <script type="text/javascript" src="loadit-js/variables.js"></script>
+
+    <!-- ########################################################################## -->
+    <!-- ########################################################################## -->
+
+  </body>
+</html>
