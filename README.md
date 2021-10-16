@@ -24,7 +24,7 @@ Load github projects in html table for personal website use.
 <script type="text/javascript" src="loadit-js/variables.js"></script>
 ```
 
-- add next struct to your html file (you can change html to include classes, check our [websitte example](https://bakincode.github.io/) and respective [source code](https://github.com/bakincode/bakincode.github.io)):
+- add next struct to your html file (you can change html to include classes, check our [website example](https://bakincode.github.io/) and respective [source code](https://github.com/bakincode/bakincode.github.io)):
 
 ```html
 <div id="projects">
