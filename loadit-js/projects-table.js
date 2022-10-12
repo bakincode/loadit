@@ -1,5 +1,5 @@
 /**
- * Fill the html table with content of current page projects (on tbody tag). 
+ * Fill the html table with content of current page projects (on body tag). 
  * @param {*} actualPage actual page 
  */
 function createProjectsTable(actualPage){
